@@ -5,7 +5,6 @@ export default function App() {
   return (
     <View style={styles.appContainer}>
       <View style={styles.inputContainer}>
-        <Text>Text</Text>
         <TextInput
           placeholder="Your course goal!"
           style={styles.textInput}
@@ -26,12 +25,13 @@ const styles = StyleSheet.create({
     padding: 50,
   },
   inputContainer: {
-    flexDirection: "column",
+    flexDirection: "row",
     justifyContent: "space-between",
   },
   textInput: {
     borderWidth: 1,
     borderColor: "black",
     width: "70%",
+    padding: 8,
   },
 });
